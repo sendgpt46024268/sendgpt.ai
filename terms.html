@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms & Conditions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Terms & Conditions - SendGPT</h1></header>
+  <main>
+    <p>By using SendGPT, you accept all risks and responsibility for your use of AI-generated content...</p>
+    <label><input type="checkbox" id="agree"> I Agree to the Terms</label><br><br>
+    <button onclick="goToQuestions()">Continue</button>
+  </main>
+
+  <script>
+    function goToQuestions() {
+      const agree = document.getElementById('agree');
+      if (!agree.checked) {
+        alert("You must agree to continue.");
+        return;
+      }
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
